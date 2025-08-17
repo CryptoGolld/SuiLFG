@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
-import { Badge } => '@/components/ui/badge.jsx'
+import { Badge } from '@/components/ui/badge.jsx'
 import { Rocket, Shield, Users, Coins, TrendingUp, Vote, Zap, Star, CheckCircle, ArrowRight, ExternalLink, Twitter, Github, Menu, X, BookOpen } from 'lucide-react'
 import suilfgLogo from './assets/suilfg-logo.png'
 import './App.css'
