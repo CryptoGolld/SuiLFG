@@ -574,7 +574,7 @@ function App() {
                     <span className="text-gray-700">Twitter</span>
                   </a>
                   <a 
-                    href="https://discord.gg/3HrraRAj69" 
+                    href="https://discord.gg/6jqMcCA5eV" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg hover:shadow-md transition-shadow"
@@ -643,7 +643,7 @@ function App() {
               <a href="https://x.com/SuiLFG_" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="https://discord.gg/3HrraRAj69" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://discord.gg/6jqMcCA5eV" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <MessageCircle className="h-6 w-6" />
               </a>
               <a href="https://suilfg.gitbook.io/suilfg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
