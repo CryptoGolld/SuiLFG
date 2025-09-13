@@ -74,13 +74,18 @@ export function Navigation() {
           </div>
           
           {/* Desktop Launch Button */}
-          <Link to="/testnet">
+          <a 
+            href="https://app.suilfg.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden md:block"
+          >
             <Button 
-              className="hidden md:block bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700"
+              className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
             >
               Launch Testnet
             </Button>
-          </Link>
+          </a>
         </div>
         
         {/* Mobile Navigation Menu */}
@@ -123,13 +128,18 @@ export function Navigation() {
                 Testnet
               </Link>
               <div className="px-3 py-2">
-                <Link to="/testnet" onClick={() => setMobileMenuOpen(false)}>
+                <a 
+                  href="https://app.suilfg.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   <Button 
-                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700"
+                    className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
                   >
                     Launch Testnet
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Rocket, CheckCircle, Star, Twitter, BookOpen } from 'lucide-react'
+import { Rocket, CheckCircle, Star, Twitter, BookOpen, ExternalLink } from 'lucide-react'
 
 const DiscordIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -19,19 +19,31 @@ export function TestnetSection() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
             <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Rocket className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Testnet Coming This Month!</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Testnet is LIVE! 🚀</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Get ready to experience SuiLFG's revolutionary anti-whale prediction market platform. 
-                Our testnet will showcase all the innovative features that make manipulation impossible.
+                Experience SuiLFG's revolutionary anti-whale prediction market platform right now. 
+                All innovative features are live and ready for testing.
               </p>
+              <div className="mb-6">
+                <a 
+                  href="https://app.suilfg.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <Rocket className="mr-2 h-6 w-6" />
+                  Launch Testnet App
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </a>
+              </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">What to Expect</h4>
+                <h4 className="text-xl font-semibold text-gray-900 mb-4">What's Available Now</h4>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
                   <div>
@@ -100,9 +112,16 @@ export function TestnetSection() {
             </div>
             
             <div className="text-center">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
-                Get Notified for Testnet Launch
-              </Button>
+              <a 
+                href="https://app.suilfg.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                <Rocket className="mr-2 h-6 w-6" />
+                Launch Testnet App Now
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>

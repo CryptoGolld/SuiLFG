@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Rocket, ArrowRight } from 'lucide-react'
+import { Rocket, ArrowRight, ExternalLink } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import suilfgLogo from '@/assets/suilfg-logo.png'
 
@@ -23,15 +23,16 @@ export function HeroSection() {
             We've engineered a revolutionary governance model to eliminate whale manipulation for good.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/testnet">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-3"
-              >
-                <Rocket className="mr-2 h-5 w-5" />
-                Launch Testnet App
-              </Button>
-            </Link>
+            <a 
+              href="https://app.suilfg.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <Rocket className="mr-2 h-5 w-5" />
+              Launch Testnet App
+              <ExternalLink className="ml-2 h-5 w-5" />
+            </a>
             <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50">
               Discover Governance Model
               <ArrowRight className="ml-2 h-5 w-5" />
