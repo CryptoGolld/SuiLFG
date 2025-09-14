@@ -20,7 +20,7 @@ import {
   Stethoscope
 } from 'lucide-react'
 
-const TokenomicsPage = () => {
+export function TokenomicsPage() {
   const tokenAllocation = [
     {
       category: "Community & Ecosystem",
@@ -370,5 +370,3 @@ const TokenomicsPage = () => {
     </>
   )
 }
-
-export default TokenomicsPage
