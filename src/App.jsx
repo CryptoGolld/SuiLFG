@@ -1,27 +1,28 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Suspense, lazy } from 'react'
-import { LoadingPage } from '@/components/common/Loading.jsx'
 import './App.css'
 
-// Lazy load components for better performance
-const HomePage = lazy(() => import('@/pages/HomePage.jsx'))
-const PlatformPage = lazy(() => import('@/pages/PlatformPage.jsx'))
-const GovernancePage = lazy(() => import('@/pages/GovernancePage.jsx'))
-const TokenomicsPage = lazy(() => import('@/pages/TokenomicsPage.jsx'))
-const TestnetPage = lazy(() => import('@/pages/TestnetPage.jsx'))
+// Simple test component
+function HomePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-purple-50 to-blue-50 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold text-gray-900 mb-4">SuiLFG</h1>
+        <p className="text-xl text-gray-600">Website is working!</p>
+      </div>
+    </div>
+  )
+}
 
 function App() {
   return (
     <Router>
-      <Suspense fallback={<LoadingPage />}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/platform" element={<PlatformPage />} />
-          <Route path="/governance" element={<GovernancePage />} />
-          <Route path="/tokenomics" element={<TokenomicsPage />} />
-          <Route path="/testnet" element={<TestnetPage />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/platform" element={<HomePage />} />
+        <Route path="/governance" element={<HomePage />} />
+        <Route path="/tokenomics" element={<HomePage />} />
+        <Route path="/testnet" element={<HomePage />} />
+      </Routes>
     </Router>
   )
 }
