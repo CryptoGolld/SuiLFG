@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import { LoadingPage } from '@/components/common/Loading.jsx'
+import { ScrollToTop } from '@/components/common/ScrollToTop.jsx'
 import './App.css'
 
 // Lazy load components for better performance
@@ -13,6 +14,7 @@ const TestnetPage = lazy(() => import('@/pages/TestnetPage.jsx'))
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Suspense fallback={<LoadingPage />}>
         <Routes>
           <Route path="/" element={<HomePage />} />

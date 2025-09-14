@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Image } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import suilfgLogo from '@/assets/suilfg-logo.png'
@@ -60,6 +60,15 @@ export function Navigation() {
             >
               Testnet
             </Link>
+            <a 
+              href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium transition-colors text-gray-600 hover:text-purple-600 flex items-center"
+            >
+              <Image className="h-4 w-4 mr-1" />
+              NFT Collection
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -127,6 +136,16 @@ export function Navigation() {
               >
                 Testnet
               </Link>
+              <a 
+                href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-left px-3 py-2 text-base font-medium transition-colors text-gray-600 hover:text-purple-600 hover:bg-gray-50 flex items-center"
+              >
+                <Image className="h-4 w-4 mr-2" />
+                NFT Collection
+              </a>
               <div className="px-3 py-2">
                 <a 
                   href="https://app.suilfg.com" 

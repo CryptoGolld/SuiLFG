@@ -41,34 +41,9 @@ export function TestnetSection() {
               </div>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">What's Available Now</h4>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
-                  <div>
-                    <p className="font-semibold">Full Platform Testing</p>
-                    <p className="text-gray-600">Test all core features including market creation and trading</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
-                  <div>
-                    <p className="font-semibold">NFT Governance System</p>
-                    <p className="text-gray-600">Experience the three-tier NFT voting mechanism</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
-                  <div>
-                    <p className="font-semibold">Dispute Resolution</p>
-                    <p className="text-gray-600">Test the anti-whale voting system in action</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">Early Access Benefits</h4>
+            <div className="space-y-4 mb-8">
+              <h4 className="text-xl font-semibold text-gray-900 mb-4 text-center">Early Access Benefits</h4>
+              <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex items-start space-x-3">
                   <Star className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>

@@ -33,10 +33,12 @@ export function HeroSection() {
               Launch Testnet App
               <ExternalLink className="ml-2 h-5 w-5" />
             </a>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50">
-              Discover Governance Model
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/governance">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50">
+                Discover Governance Model
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
