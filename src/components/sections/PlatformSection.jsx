@@ -1,5 +1,3 @@
-import { architectureModules } from '@/data/architectureModules.js'
-
 export function PlatformSection() {
   return (
     <section className="py-16 bg-white">
