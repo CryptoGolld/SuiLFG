@@ -6,11 +6,11 @@ import { nftTiers } from '@/data/nftTiers.js'
 
 export function NFTGovernanceSection() {
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-cyan-50">
+    <section className="py-16 bg-gradient-to-br from-gray-800 to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Your Voice, Amplified</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-100 mb-4">Your Voice, Amplified</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Our Governance NFTs are the key to unlocking true influence on the platform. They provide base voting power 
             and multiply the weight of your staked SUI, ensuring dedicated users have a powerful voice.
           </p>

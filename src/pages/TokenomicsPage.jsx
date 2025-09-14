@@ -121,7 +121,7 @@ export default function TokenomicsPage() {
         <Navigation />
         <main className="pt-16">
           {/* Hero Section */}
-          <section className="py-16 bg-gradient-to-br from-purple-50 via-cyan-50 to-blue-50">
+          <section className="py-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <div className="flex justify-center mb-6">
@@ -132,7 +132,7 @@ export default function TokenomicsPage() {
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
                   <span className="suilfg-text-gradient">$LFG Tokenomics</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+                <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
                   The $LFG token powers the SuiLFG ecosystem with community-first governance, 
                   staking rewards, and platform incentives.
                 </p>
@@ -151,13 +151,13 @@ export default function TokenomicsPage() {
           </section>
 
           {/* Philosophy Section */}
-          <section className="py-16 bg-white">
+          <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Core Philosophy</h2>
-                <div className="bg-gradient-to-r from-purple-50 to-cyan-50 rounded-2xl p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">"Community First, Productive Governance"</h3>
-                  <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+                <h2 className="text-4xl font-bold text-gray-100 mb-6">Core Philosophy</h2>
+                <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-8 border border-gray-700">
+                  <h3 className="text-2xl font-bold text-gray-100 mb-4">"Community First, Productive Governance"</h3>
+                  <p className="text-lg text-gray-300 max-w-4xl mx-auto">
                     The $LFG token derives its value from governance control and platform success sharing. 
                     This model explicitly rewards our foundational NFT holders, creating a powerful feedback loop: 
                     as the platform grows, the token becomes more valuable, which incentivizes stronger governance and security.
@@ -168,11 +168,11 @@ export default function TokenomicsPage() {
           </section>
 
           {/* Token Allocation Section */}
-          <section className="py-16 bg-gradient-to-br from-gray-50 to-cyan-50">
+          <section className="py-16 bg-gradient-to-br from-gray-800 to-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">Token Allocation</h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 className="text-4xl font-bold text-gray-100 mb-4">Token Allocation</h2>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                   Balanced allocation designed to reward community ownership while supporting long-term project needs
                 </p>
               </div>
@@ -202,8 +202,8 @@ export default function TokenomicsPage() {
               </div>
 
               {/* Allocation Chart */}
-              <div className="bg-white rounded-2xl shadow-xl p-8">
-                <h3 className="text-2xl font-bold text-center mb-8">Allocation Breakdown</h3>
+              <div className="bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700">
+                <h3 className="text-2xl font-bold text-center mb-8 text-gray-100">Allocation Breakdown</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4">
                     {tokenAllocation.map((item, index) => (
@@ -211,10 +211,10 @@ export default function TokenomicsPage() {
                         <div className={`w-4 h-4 bg-gradient-to-r ${item.color} rounded-full`}></div>
                         <div className="flex-1">
                           <div className="flex justify-between items-center">
-                            <span className="font-medium">{item.category}</span>
-                            <span className="font-bold">{item.percentage}</span>
+                            <span className="font-medium text-gray-200">{item.category}</span>
+                            <span className="font-bold text-gray-100">{item.percentage}</span>
                           </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2 mt-1">
+                          <div className="w-full bg-gray-600 rounded-full h-2 mt-1">
                             <div 
                               className={`h-2 bg-gradient-to-r ${item.color} rounded-full`}
                               style={{ width: item.percentage }}
@@ -226,7 +226,7 @@ export default function TokenomicsPage() {
                   </div>
                   <div className="text-center">
                     <PieChart className="h-32 w-32 mx-auto text-gray-400 mb-4" />
-                    <p className="text-gray-600">Visual representation of token distribution</p>
+                    <p className="text-gray-300">Visual representation of token distribution</p>
                   </div>
                 </div>
               </div>
@@ -234,11 +234,11 @@ export default function TokenomicsPage() {
           </section>
 
           {/* Token Utility Section */}
-          <section className="py-16 bg-white">
+          <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">$LFG Token Utility</h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 className="text-4xl font-bold text-gray-100 mb-4">$LFG Token Utility</h2>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                   The Three Pillars: Clear, concise utility tied directly to SuiLFG's core functions
                 </p>
               </div>
@@ -346,18 +346,24 @@ export default function TokenomicsPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="py-16 bg-gradient-to-br from-cyan-50 via-purple-50 to-blue-50">
+          <section className="py-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Join the $LFG Economy?</h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <h2 className="text-4xl font-bold text-gray-100 mb-6">Ready to Join the $LFG Economy?</h2>
+              <p className="text-xl text-gray-300 mb-8">
                 Get your Governance NFT to secure your place in the foundational community and receive your $LFG airdrop.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
-                  <Award className="mr-2 h-5 w-5" />
-                  Get Governance NFT
-                </Button>
-                <Button size="lg" variant="outline" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-50">
+                <a 
+                  href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
+                    <Award className="mr-2 h-5 w-5" />
+                    Get Governance NFT
+                  </Button>
+                </a>
+                <Button size="lg" variant="outline" className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400/10">
                   <BarChart3 className="mr-2 h-5 w-5" />
                   Learn More About Staking
                 </Button>
