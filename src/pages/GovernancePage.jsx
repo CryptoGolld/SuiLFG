@@ -4,7 +4,7 @@ import { NFTGovernanceSection } from '@/components/sections/NFTGovernanceSection
 import { VotingFormulaSection } from '@/components/sections/VotingFormulaSection.jsx'
 import { SEO } from '@/components/common/SEO.jsx'
 
-export function GovernancePage() {
+export default function GovernancePage() {
   return (
     <>
       <SEO 

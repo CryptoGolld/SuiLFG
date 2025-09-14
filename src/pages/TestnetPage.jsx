@@ -3,7 +3,7 @@ import { Footer } from '@/components/layout/Footer.jsx'
 import { TestnetSection } from '@/components/sections/TestnetSection.jsx'
 import { SEO } from '@/components/common/SEO.jsx'
 
-export function TestnetPage() {
+export default function TestnetPage() {
   return (
     <>
       <SEO 

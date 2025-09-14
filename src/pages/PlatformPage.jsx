@@ -3,7 +3,7 @@ import { Footer } from '@/components/layout/Footer.jsx'
 import { PlatformSection } from '@/components/sections/PlatformSection.jsx'
 import { SEO } from '@/components/common/SEO.jsx'
 
-export function PlatformPage() {
+export default function PlatformPage() {
   return (
     <>
       <SEO 

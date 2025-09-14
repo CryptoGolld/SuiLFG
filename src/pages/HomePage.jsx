@@ -7,7 +7,7 @@ import { LiquidStakingSection } from '@/components/sections/LiquidStakingSection
 import { VotingFormulaSection } from '@/components/sections/VotingFormulaSection.jsx'
 import { SEO } from '@/components/common/SEO.jsx'
 
-export function HomePage() {
+export default function HomePage() {
   return (
     <>
       <SEO 
