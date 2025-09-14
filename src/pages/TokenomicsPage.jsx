@@ -4,6 +4,7 @@ import { SEO } from '@/components/common/SEO.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Button } from '@/components/ui/button.jsx'
+import { TokenAllocationPieChart } from '@/components/charts/TokenAllocationPieChart.jsx'
 import { 
   Coins, 
   Users, 
@@ -13,7 +14,6 @@ import {
   Target,
   Award,
   BarChart3,
-  PieChart,
   DollarSign,
   Lock,
   Vote,
@@ -195,7 +195,7 @@ export default function TokenomicsPage() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-gray-600">{item.purpose}</p>
+                      <p className="text-sm text-gray-300">{item.purpose}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -225,8 +225,8 @@ export default function TokenomicsPage() {
                     ))}
                   </div>
                   <div className="text-center">
-                    <PieChart className="h-32 w-32 mx-auto text-gray-400 mb-4" />
-                    <p className="text-gray-300">Visual representation of token distribution</p>
+                    <TokenAllocationPieChart data={tokenAllocation} />
+                    <p className="text-gray-300 mt-4">Visual representation of token distribution</p>
                   </div>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function TokenomicsPage() {
                         <pillar.icon className="h-8 w-8 text-white" />
                       </div>
                       <CardTitle className="text-xl font-bold">{pillar.pillar}</CardTitle>
-                      <CardDescription className="text-gray-600">
+                      <CardDescription className="text-gray-300">
                         {pillar.description}
                       </CardDescription>
                     </CardHeader>
@@ -260,7 +260,7 @@ export default function TokenomicsPage() {
                         {pillar.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start space-x-2">
                             <div className={`w-2 h-2 bg-gradient-to-r ${pillar.color} rounded-full mt-2 flex-shrink-0`}></div>
-                            <span className="text-sm text-gray-600">{feature}</span>
+                            <span className="text-sm text-gray-300">{feature}</span>
                           </li>
                         ))}
                       </ul>

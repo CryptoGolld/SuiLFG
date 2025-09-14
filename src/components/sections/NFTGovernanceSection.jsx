@@ -24,24 +24,24 @@ export function NFTGovernanceSection() {
                   <CardTitle className="text-xl font-bold">{tier.name}</CardTitle>
                   <Badge variant="secondary" className="text-sm">{tier.supply} Supply</Badge>
                 </div>
-                <CardDescription className="text-lg font-semibold text-gray-900">
+                <CardDescription className="text-lg font-semibold text-gray-100">
                   {tier.price}
                 </CardDescription>
               </CardHeader>
               <CardContent className="relative">
                 <div className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Base Voting Power:</span>
-                    <span className="font-semibold">{tier.baseVotingPower}</span>
+                    <span className="text-gray-300">Base Voting Power:</span>
+                    <span className="font-semibold text-gray-100">{tier.baseVotingPower}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Multiplier:</span>
+                    <span className="text-gray-300">Multiplier:</span>
                     <span className={`font-bold text-2xl bg-gradient-to-r ${tier.color} bg-clip-text text-transparent`}>
                       {tier.multiplier}
                     </span>
                   </div>
                   <div className="pt-4">
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-300">
                       + Future governance token airdrop
                     </p>
                   </div>
@@ -50,23 +50,16 @@ export function NFTGovernanceSection() {
             </Card>
           ))}
         </div>
-        <div className="mt-12 text-center space-y-4">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/governance">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
-                Learn More About NFTs
-              </Button>
-            </Link>
-            <a 
-              href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" variant="outline" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-50">
-                View NFT Collection on TradePort
-              </Button>
-            </a>
-          </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" variant="outline" className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300">
+              View NFT Collection on TradePort
+            </Button>
+          </a>
         </div>
       </div>
     </section>

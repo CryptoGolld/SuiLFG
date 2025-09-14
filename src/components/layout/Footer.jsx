@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Governance</h4>
             <ul className="space-y-2">
-              <li><a href="#governance" className="text-gray-400 hover:text-white transition-colors">NFT Collection</a></li>
+              <li><a href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">NFT Collection</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Voting System</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Proposals</a></li>
             </ul>

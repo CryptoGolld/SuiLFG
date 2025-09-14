@@ -48,21 +48,21 @@ export function TestnetSection() {
                   <Star className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <p className="font-semibold">NFT Airdrop Eligibility</p>
-                    <p className="text-gray-600">Active testnet users get priority for the 5,000+ NFT airdrop</p>
+                    <p className="text-gray-300">Active testnet users get priority for the 5,000+ NFT airdrop</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Star className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <p className="font-semibold">Community Feedback</p>
-                    <p className="text-gray-600">Help shape the platform before mainnet launch</p>
+                    <p className="text-gray-300">Help shape the platform before mainnet launch</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Star className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <p className="font-semibold">Exclusive Access</p>
-                    <p className="text-gray-600">Be among the first to experience true decentralized prediction markets</p>
+                    <p className="text-gray-300">Be among the first to experience true decentralized prediction markets</p>
                   </div>
                 </div>
               </div>
@@ -70,17 +70,17 @@ export function TestnetSection() {
             
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h3>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-300 mb-6">
                 Follow our social channels for the latest testnet announcements and launch details.
               </p>
               <div className="flex justify-center space-x-4">
-                <a href="https://x.com/SuiLFG_" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-cyan-600 transition-colors">
+                <a href="https://x.com/SuiLFG_" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors">
                   <Twitter className="h-6 w-6" />
                 </a>
-                <a href="https://discord.gg/6jqMcCA5eV" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-cyan-600 transition-colors">
+                <a href="https://discord.gg/6jqMcCA5eV" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors">
                   <DiscordIcon className="h-6 w-6" />
                 </a>
-                <a href="https://suilfg.gitbook.io/suilfg" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-cyan-600 transition-colors">
+                <a href="https://suilfg.gitbook.io/suilfg" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors">
                   <BookOpen className="h-6 w-6" />
                 </a>
               </div>
