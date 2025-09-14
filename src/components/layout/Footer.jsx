@@ -9,7 +9,7 @@ const DiscordIcon = ({ className }) => (
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -48,7 +48,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
           © 2025 SuiLFG. All rights reserved.
         </div>
       </div>

@@ -18,7 +18,7 @@ export function Navigation() {
     setMobileMenuOpen(!mobileMenuOpen)
   }
   return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+    <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
@@ -32,31 +32,31 @@ export function Navigation() {
           <div className="hidden md:flex space-x-8">
             <Link 
               to="/"
-              className={`text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-cyan-600' : 'text-gray-600 hover:text-cyan-600'}`}
+              className={`text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'}`}
             >
               Home
             </Link>
             <Link 
               to="/platform"
-              className={`text-sm font-medium transition-colors ${location.pathname === '/platform' ? 'text-cyan-600' : 'text-gray-600 hover:text-cyan-600'}`}
+              className={`text-sm font-medium transition-colors ${location.pathname === '/platform' ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'}`}
             >
               Platform
             </Link>
             <Link 
               to="/governance"
-              className={`text-sm font-medium transition-colors ${location.pathname === '/governance' ? 'text-cyan-600' : 'text-gray-600 hover:text-cyan-600'}`}
+              className={`text-sm font-medium transition-colors ${location.pathname === '/governance' ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'}`}
             >
               Governance
             </Link>
             <Link 
               to="/tokenomics"
-              className={`text-sm font-medium transition-colors ${location.pathname === '/tokenomics' ? 'text-cyan-600' : 'text-gray-600 hover:text-cyan-600'}`}
+              className={`text-sm font-medium transition-colors ${location.pathname === '/tokenomics' ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'}`}
             >
               Tokenomics
             </Link>
             <Link 
               to="/testnet"
-              className={`text-sm font-medium transition-colors ${location.pathname === '/testnet' ? 'text-cyan-600' : 'text-gray-600 hover:text-cyan-600'}`}
+              className={`text-sm font-medium transition-colors ${location.pathname === '/testnet' ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'}`}
             >
               Testnet
             </Link>
@@ -64,7 +64,7 @@ export function Navigation() {
               href="https://www.tradeport.xyz/sui/collection/0xbd672d1c158c963ade8549ae83bda75f29f6b3ce0c59480f3921407c4e8c6781%3A%3Agovernance_nfts%3A%3ASuiLFG_NFT?bottomTab=trades&tab=items"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium transition-colors text-gray-600 hover:text-purple-600 flex items-center"
+              className="text-sm font-medium transition-colors text-gray-300 hover:text-purple-400 flex items-center"
             >
               <Image className="h-4 w-4 mr-1" />
               NFT Collection
@@ -75,7 +75,7 @@ export function Navigation() {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-gray-600 hover:text-cyan-600 p-2"
+              className="text-gray-300 hover:text-cyan-400 p-2"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -99,40 +99,40 @@ export function Navigation() {
         
         {/* Mobile Navigation Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-md">
+          <div className="md:hidden border-t border-gray-800 bg-black/95 backdrop-blur-md">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link 
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/' ? 'text-cyan-600 bg-cyan-50' : 'text-gray-600 hover:text-cyan-600 hover:bg-gray-50'}`}
+                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/' ? 'text-cyan-400 bg-gray-800' : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-800'}`}
               >
                 Home
               </Link>
               <Link 
                 to="/platform"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/platform' ? 'text-cyan-600 bg-cyan-50' : 'text-gray-600 hover:text-cyan-600 hover:bg-gray-50'}`}
+                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/platform' ? 'text-cyan-400 bg-gray-800' : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-800'}`}
               >
                 Platform
               </Link>
               <Link 
                 to="/governance"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/governance' ? 'text-cyan-600 bg-cyan-50' : 'text-gray-600 hover:text-cyan-600 hover:bg-gray-50'}`}
+                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/governance' ? 'text-cyan-400 bg-gray-800' : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-800'}`}
               >
                 Governance
               </Link>
               <Link 
                 to="/tokenomics"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/tokenomics' ? 'text-cyan-600 bg-cyan-50' : 'text-gray-600 hover:text-cyan-600 hover:bg-gray-50'}`}
+                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/tokenomics' ? 'text-cyan-400 bg-gray-800' : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-800'}`}
               >
                 Tokenomics
               </Link>
               <Link 
                 to="/testnet"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/testnet' ? 'text-cyan-600 bg-cyan-50' : 'text-gray-600 hover:text-cyan-600 hover:bg-gray-50'}`}
+                className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${location.pathname === '/testnet' ? 'text-cyan-400 bg-gray-800' : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-800'}`}
               >
                 Testnet
               </Link>
@@ -141,7 +141,7 @@ export function Navigation() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block w-full text-left px-3 py-2 text-base font-medium transition-colors text-gray-600 hover:text-purple-600 hover:bg-gray-50 flex items-center"
+                className="block w-full text-left px-3 py-2 text-base font-medium transition-colors text-gray-300 hover:text-purple-400 hover:bg-gray-800 flex items-center"
               >
                 <Image className="h-4 w-4 mr-2" />
                 NFT Collection

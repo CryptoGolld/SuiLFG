@@ -5,7 +5,7 @@ import suilfgLogo from '@/assets/suilfg-logo.png'
 
 export function HeroSection() {
   return (
-    <section className="pt-24 pb-16 bg-gradient-to-br from-cyan-50 via-purple-50 to-blue-50">
+    <section className="pt-24 pb-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex justify-center mb-8">
@@ -16,9 +16,9 @@ export function HeroSection() {
               Prediction Markets,
             </span>
             <br />
-            <span className="text-gray-900 text-shadow">Secured.</span>
+            <span className="text-gray-100 text-shadow">Secured.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Welcome to SuiLFG, the decentralized prediction market on Sui where your vote can't be bought. 
             We've engineered a revolutionary governance model to eliminate whale manipulation for good.
           </p>
@@ -34,7 +34,7 @@ export function HeroSection() {
               <ExternalLink className="ml-2 h-5 w-5" />
             </a>
             <Link to="/governance">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10">
                 Discover Governance Model
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
